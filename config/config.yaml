@@ -282,12 +282,12 @@ ai_analysis:
   provider: "custom"              # 提供商
   api_key: ""                       # API Key（建议使用环境变量 AI_API_KEY）
 
-  model: "openai/gpt-oss-120b:free"            # 模型名称
+  model: "nvidia/nemotron-3-nano-30b-a3b:free"            # 模型名称
                                     # DeepSeek: deepseek-chat, deepseek-reasoner
                                     # OpenAI: o3-mini, o1, gpt-4o
                                     # Gemini: gemini-2.5-flash, gemini-2.5-pro
 
-  base_url: "https://openrouter.ai/api/v1"                      # 完整 API 地址（可选）
+  base_url: "https://openrouter.ai/api/v1/chat/completions"                      # 完整 API 地址（可选）
                                     # 留空则使用提供商默认端点
                                     # 其他提供商必须填写完整 URL
                                     # 示例: https://api.openai.com/v1/chat/completions
